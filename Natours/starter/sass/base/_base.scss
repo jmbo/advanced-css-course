@@ -1,0 +1,27 @@
+/* --------------------------------------------------- */
+/* BASIC DEFINITIONS */
+/* --------------------------------------------------- */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    /* slightly better practice */
+    box-sizing: inherit;
+}
+
+html {
+    /* 1 rem = 10px -- ideally this is 10px for easy rem calculations -- but it is a bad practice
+     * to set font-size to a fix values as users (those with eyesight problems) will have difficulty
+     * increasing a font size to their desire */
+    /* rem units are not supported on IE 9 and below */
+    /* font-size: 10px; */
+    /* Instead we specify a percentage of the user specified font-size, or browser default (usually
+     * 16px)... 10px we want / 16 default = 62.5% */
+    /* this is not really a typography definition as more of an a what 1rem definition should be */
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
